@@ -10,7 +10,6 @@ axios.defaults.withCredentials = true;
 
 const Main = () => {
   const { user } = useContext(UserContext);
-  console.log("current user", user);
   return (
     <div className="p-4 flex flex-col min-h-screen">
       <Header />

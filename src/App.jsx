@@ -4,6 +4,7 @@ import LoginPage from "./pages/LoginPage";
 import Main from "./layout/Main";
 import Register from "./pages/Register";
 import AccountPage from "./pages/AccountPage";
+import PlaceCreateForm from "./pages/PlaceCreateForm";
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<Register />} />
         <Route path="/account/:subpage?" element={<AccountPage />} />
+        <Route path="/account/:subpage/:action" element={<AccountPage />} />
+        <Route path="/account/:subpage/new" element={<PlaceCreateForm />} />
       </Route>
     </Routes>
   );
